@@ -1,0 +1,63 @@
+@import "_all";
+
+// GENERIC
+@import "~inuitcss/generic/generic.box-sizing";
+@import "~inuitcss/generic/generic.normalize";
+@import "~inuitcss/generic/generic.reset";
+@import "~inuitcss/generic/generic.shared";
+
+// ELEMENTS
+@import "~inuitcss/elements/elements.page";
+@import "~inuitcss/elements/elements.headings";
+@import "~inuitcss/elements/elements.images";
+@import "~inuitcss/elements/elements.tables";
+@import "elements/elements.headings";
+@import "elements/elements.anchors";
+
+// OBJECTS
+//
+// Uncomment and add to this section as necessary.
+@import "~inuitcss/objects/objects.wrapper";
+@import "~inuitcss/objects/objects.layout";
+@import "~inuitcss/objects/objects.media";
+@import "~inuitcss/objects/objects.flag";
+@import "~inuitcss/objects/objects.list-bare";
+@import "~inuitcss/objects/objects.list-inline";
+@import "~inuitcss/objects/objects.box";
+@import "~inuitcss/objects/objects.block";
+@import "~inuitcss/objects/objects.ratio";
+@import "~inuitcss/objects/objects.crop";
+@import "~inuitcss/objects/objects.table";
+@import "~inuitcss/objects/objects.pack";
+
+// COMPONENTS
+//
+// Build and include your project’s UI Compoments here.
+@import "components/components.buttons";
+
+// UTILITIES
+@import "~inuitcss/utilities/utilities.clearfix";
+$inuit-offsets: true;
+@import "~inuitcss/utilities/utilities.widths";
+@import "~inuitcss/utilities/utilities.headings";
+@import "~inuitcss/utilities/utilities.spacings";
+@import "~inuitcss/utilities/utilities.responsive-spacings";
+@import "~inuitcss/utilities/utilities.print";
+@import "~inuitcss/utilities/utilities.hide";
+
+html, body {
+  font-family: sans-serif;
+  color: $color-text;
+  background-color: $color-background;
+  @include mq($from: desktop) {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.o-wrapper--in-fixed-navbar {
+  width: 100%;
+  @include mq($from: desktop){
+    display: flex;
+  }
+}

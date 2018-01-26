@@ -1,0 +1,19 @@
+///* ========================================================================
+//   #GLOBAL
+//   ======================================================================== */
+// The global settings file contains any project-wide variables; things that
+// need to be made available to the entire codebase.
+
+@import "~sass-mq/mq";
+// Standardise some UI treatments.
+$global-radius: 3px !default;
+$global-transition: all 300ms ease-in-out !default;
+
+/* Colors */
+$color-link: hsl(153, 47%, 49%) !default;
+$color-text: hsl(0, 0%, 27%) !default;
+$color-background: hsl(0,  0%, 100%) !default;
+
+$inuit-wrapper-width: 1200px;
+// $inuit-global-spacing-unit: 24px;
+// $inuit-global-spacing-unit-small: 24px;
